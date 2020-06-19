@@ -18,12 +18,13 @@ RUN yum -y install LumenVox-Heidi_22-VoiceDB && \
 # LIC PORT NUM : 7569
 # TTS PORT NUM : 7579
 # ADMIN PORT   : 8000
-# TOMCAT 8080 TTS WebUI
+# TOMCAT       : 8080, 9443
 
 EXPOSE 7569
 EXPOSE 7579
 EXPOSE 8000
 EXPOSE 8080
+EXPOSE 9443
 
 WORKDIR /etc/lumenvox
 CMD ["/opt/init.sh"]
